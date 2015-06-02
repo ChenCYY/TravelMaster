@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg">"
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/contacts">"
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#55ffffff"
+            android:text="景点排行榜"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <TableLayout 
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:collapseColumns="3"
+ 		    android:layout_marginTop="0px">
+ 		    
+ 		    <TableRow 
+ 		        android:layout_width="fill_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:layout_marginTop="2px"
+ 		         android:background="#55ffffff">
+ 		         <Spinner
+                     android:id="@+id/selectYears"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:prompt="@string/selectyears"
+                     android:layout_weight="1" />
+ 		        
+ 		        <Spinner
+                     android:id="@+id/selectSeasons"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:prompt="@string/selectseasons"
+                     android:layout_weight="1" />
+
+ 		        <Button
+ 		            android:id="@+id/submitSelection"
+ 		            android:layout_width="match_parent"
+ 		            android:layout_height="wrap_content"
+ 		            android:gravity="center"
+ 		            android:text="确定" 
+ 		            android:layout_weight="1"/>
+ 		        
+ 		    </TableRow>
+ 		    
+ 		    
+ 		</TableLayout>
+ 		<ListView 
+    	    android:id="@+id/listattractions2"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:background="#55ffffff"
+    	    ></ListView>
+ 
 
 </LinearLayout>
+
+</RelativeLayout>
