@@ -77,7 +77,7 @@ public class HomepageFragment extends Fragment {
 	    private int currentIndex=0;
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View messageLayout = inflater.inflate(R.layout.message_layout,
+		View messageLayout = inflater.inflate(R.layout.homepage_layout,
 				container, false);
 		pager=(ViewPager) messageLayout.findViewById(R.id.viewpager);
 		//titleStrip=(PagerTitleStrip) messageLayout.findViewById(R.id.titlestrip);
