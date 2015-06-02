@@ -86,6 +86,7 @@ public class WebAccessUtils {
 		return "102";
 	}
 
+	//根据图片的URL下载从服务器下载图片
 	public static Bitmap DownloadImage(String URL) {
 		Bitmap bitmap = null;
 		InputStream in;
