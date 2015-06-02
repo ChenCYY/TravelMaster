@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5px"
+    android:layout_marginTop="5px"
+    android:background="#55ffffff">
+    <TableLayout 
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:shrinkColumns="0,1.2"
+ 		    android:layout_marginTop="5px"
+ 		    android:background="#55ffffff">
+ 		    
+ 		   
+ 		      <TextView 
+ 		           android:id="@+id/txtHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:text="主题主题主题"/>
+          
+          
+ 		      <TextView 
+ 		           android:id="@+id/txtContents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5px"
+                    android:paddingLeft="15px"
+                    android:text="内容内容内容"/>
+         
+            <TableRow 
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		      >
+ 		      <TextView 
+ 		           android:id="@+id/txtUsers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:layout_weight="3"
+                    android:paddingLeft="5px"
+                    android:layout_marginTop="5px"
+                    android:text="用户用户"/>
+ 		      <TextView 
+ 		           android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="#55000000"
+                    android:textSize="13dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="5px"
+                    android:text="时间时间"/>
+ 		      <TextView 
+ 		           android:id="@+id/txtReplynum"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:textColor="#55000000"
+                    android:textSize="13dp"
+                    android:gravity="right"
+                    android:paddingRight="20px"
+                    android:layout_marginTop="5px"
+                    android:layout_weight="1"
+                    android:text="回复数"/>
+           </TableRow>
+    </TableLayout>
+</LinearLayout>
