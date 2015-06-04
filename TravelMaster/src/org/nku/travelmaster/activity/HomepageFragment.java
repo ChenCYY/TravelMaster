@@ -77,7 +77,7 @@ public class HomepageFragment extends Fragment {
 	    private int currentIndex=0;
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View messageLayout = inflater.inflate(R.layout.homepage_layout,
+		View messageLayout = inflater.inflate(R.layout.message_layout,
 				container, false);
 		pager=(ViewPager) messageLayout.findViewById(R.id.viewpager);
 		//titleStrip=(PagerTitleStrip) messageLayout.findViewById(R.id.titlestrip);
@@ -236,7 +236,7 @@ private class Viewocl implements View.OnClickListener{
 			intent.setClass(HomepageFragment.this.getActivity(), AttractionActivity.class);
 			System.out.println("Attraction:Mid="+aid);
 			
-			intent.putExtra("mid", Integer.toString(aid));
+			intent.putExtra("aid", Integer.toString(aid));
 			startActivity(intent);
 			break;
 		case 1:
@@ -244,7 +244,7 @@ private class Viewocl implements View.OnClickListener{
 			intent.setClass(HomepageFragment.this.getActivity(), AttractionActivity.class);
 			System.out.println("Attraction:Mid="+aid);
 			
-			intent.putExtra("mid", Integer.toString(aid));
+			intent.putExtra("aid", Integer.toString(aid));
 			startActivity(intent);
 			break;
 		case 2:
@@ -252,7 +252,7 @@ private class Viewocl implements View.OnClickListener{
 			intent.setClass(HomepageFragment.this.getActivity(), AttractionActivity.class);
 			System.out.println("Attraction:Mid="+aid);
 			
-			intent.putExtra("mid", Integer.toString(aid));
+			intent.putExtra("aid", Integer.toString(aid));
 			startActivity(intent);
 			break;
 		case 3:
@@ -260,7 +260,7 @@ private class Viewocl implements View.OnClickListener{
 			intent.setClass(HomepageFragment.this.getActivity(), AttractionActivity.class);
 			System.out.println("Attraction:Mid="+aid);
 			
-			intent.putExtra("mid", Integer.toString(aid));
+			intent.putExtra("aid", Integer.toString(aid));
 			startActivity(intent);
 			break;
 		default:
@@ -285,9 +285,10 @@ private class ItemOcl implements AdapterView.OnItemClickListener{
 		intent.setClass(HomepageFragment.this.getActivity(), AttractionActivity.class);
 		System.out.println("Attraction:Mid="+aid);
 		
-		intent.putExtra("mid", Integer.toString(aid));
+		intent.putExtra("aid", Integer.toString(aid));
 		startActivity(intent);
 	}
 	
 }
 }
+
