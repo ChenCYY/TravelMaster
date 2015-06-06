@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <!-- 左半部分 -->
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="头像"
+        android:src="@drawable/p1" />
+    <!-- 右半部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp" >
+
+        <!-- 上半部分 -->
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:collapseColumns="2"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtNickName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtPublish"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:text="2014-08-22" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- 下半部分 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <!-- 正文 -->
+
+            <TextView
+                android:id="@+id/txtPosts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="测试测试测试测试测试测试测试测试测试测试测试测试"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp" >
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
