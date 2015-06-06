@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="2px" >
+    <TableLayout 
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:collapseColumns="2"
+ 		    android:layout_marginTop="2px">
+ 		    
+ 		    <TableRow 
+ 		        android:layout_width="fill_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:layout_marginTop="2px"
+ 		         android:background="#55ffffff"
+ 		       >
+ 		        
+ 		        <TextView
+ 		            
+                    android:layout_width="fill_parent"
+                    android:layout_height="70px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="所在省份："
+                    android:paddingLeft="20px"
+ 		            android:layout_weight="1"/>
+ 		        
+ 		        <TextView
+ 		            android:id="@+id/attProvince"
+ 		            android:layout_width="fill_parent"
+ 		            android:layout_height="70px"
+ 		            android:paddingRight="100px"
+ 		            android:gravity="left|center"
+ 		         	android:text="所在省份"
+ 		            android:textColor="#000000"
+ 		            android:textSize="20dp"
+ 		            android:layout_weight="1" />
+ 		        
+ 		    </TableRow>
+ 		    
+ 		    <TableRow 
+ 		        android:layout_width="fill_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:layout_marginTop="2px"
+ 		         android:background="#55ffffff"
+ 		       >
+ 		        
+ 		        <TextView
+ 		            
+                    android:layout_width="fill_parent"
+                    android:layout_height="70px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="所在城市："
+                    android:paddingLeft="20px"
+ 		            android:layout_weight="1"/>
+ 		        
+ 		        <TextView
+ 		            android:id="@+id/attCity"
+ 		            android:layout_width="fill_parent"
+ 		            android:layout_height="70px"
+ 		            android:paddingRight="100px"
+ 		            android:gravity="left|center"
+ 		         	android:text="所在城市"
+ 		            android:textColor="#000000"
+ 		            android:textSize="20dp"
+ 		            android:layout_weight="1" />
+ 		        
+ 		    </TableRow>
+ 		    
+ 		    <TableRow 
+ 		        android:layout_width="fill_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:layout_marginTop="2px"
+ 		         android:background="#55ffffff"
+ 		       >
+ 		        
+ 		        <TextView
+ 		            
+                    android:layout_width="fill_parent"
+                    android:layout_height="70px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="评分："
+                    android:paddingLeft="20px"
+ 		            android:layout_weight="1"/>
+ 		        
+ 		        <TextView
+ 		            android:id="@+id/attComments"
+ 		            android:layout_width="fill_parent"
+ 		            android:layout_height="70px"
+ 		            android:paddingRight="100px"
+ 		            android:gravity="left|center"
+ 		         	android:text="评分"
+ 		            android:textColor="#000000"
+ 		            android:textSize="20dp"
+ 		            android:layout_weight="1" />
+ 		        
+ 		    </TableRow>
+ 		    
+ 		    <TableRow 
+ 		        android:layout_width="fill_parent"
+ 		        android:layout_height="wrap_content"
+ 		        android:layout_marginTop="2px"
+ 		         android:background="#55ffffff"
+ 		       >
+ 		        
+ 		        <TextView
+ 		            
+                    android:layout_width="fill_parent"
+                    android:layout_height="70px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="点击总数："
+                    android:paddingLeft="20px"
+ 		            android:layout_weight="1"/>
+ 		        
+ 		        <TextView
+ 		            android:id="@+id/attSum"
+ 		            android:layout_width="fill_parent"
+ 		            android:layout_height="70px"
+ 		            android:paddingRight="100px"
+ 		            android:gravity="left|center"
+ 		         	android:text="点击总数"
+ 		            android:textColor="#000000"
+ 		            android:textSize="20dp"
+ 		            android:layout_weight="1" />
+ 		        
+ 		    </TableRow>
+ 		</TableLayout>
+ 
+
+</LinearLayout>
