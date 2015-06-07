@@ -139,4 +139,3 @@ public class ShowAttractionActivity extends Activity{
 	}
 
 }
-

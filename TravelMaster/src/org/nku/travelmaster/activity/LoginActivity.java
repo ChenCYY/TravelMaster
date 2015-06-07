@@ -102,8 +102,7 @@ public class LoginActivity extends Activity {
 			String user_data = gson.toJson(user);
 
 			List<NameValuePair> lstNameValuePairs = new ArrayList<NameValuePair>();
-			lstNameValuePairs
-					.add(new BasicNameValuePair("user_data", user_data));
+			lstNameValuePairs.add(new BasicNameValuePair("user_data", user_data));
 
 			String response = WebAccessUtils.httpRequest("AndroidLoginServlet",
 					lstNameValuePairs);

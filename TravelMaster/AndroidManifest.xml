@@ -48,6 +48,15 @@
         <activity
             android:name="org.nku.travelmaster.activity.MyfriendActivity"
             android:label="我的关注" />
+        <activity 
+            android:name="org.nku.travelmaster.activity.ShowAttractionActivity" 
+            android:label="景点详情"/>
+        <activity 
+            android:name="org.nku.travelmaster.activity.ShowPostActivity" 
+            android:label="主题帖"/>
+        <activity 
+            android:name="org.nku.travelmaster.activity.SendNewPostActivity" 
+            android:label="发表帖子"/>
     </application>
 
 </manifest>

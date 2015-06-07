@@ -56,7 +56,7 @@ public class WebAccessUtils {
 	public static String httpRequest(final String webServiceName,
 			final List<? extends NameValuePair> lstNameValuePairs) {
 		String uri = URI + webServiceName;
-		System.out.println("URI:>" + uri);
+		System.out.println("带参URI:>" + uri);
 		HttpPost httpPostRequest = new HttpPost(uri);
 		try {
 			UrlEncodedFormEntity entity = new UrlEncodedFormEntity(
@@ -86,7 +86,6 @@ public class WebAccessUtils {
 		return "102";
 	}
 
-	//根据图片的URL下载从服务器下载图片
 	public static Bitmap DownloadImage(String URL) {
 		Bitmap bitmap = null;
 		InputStream in;

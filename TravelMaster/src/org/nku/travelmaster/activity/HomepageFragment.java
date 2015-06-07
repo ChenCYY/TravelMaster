@@ -87,18 +87,18 @@ public class HomepageFragment extends Fragment {
 	     
 	     pager.setAdapter(new PagerAdapter() {
 	    	 
-	            //viewpagerä¸­çš„ç»„ä»¶æ•°é‡
+	            //viewpagerÖĞµÄ×é¼şÊıÁ¿
 	            @Override
 	            public int getCount() {
 	                return viewContainter.size();
 	            }
-	          //æ»‘åŠ¨åˆ‡æ¢çš„æ—¶å€™é”€æ¯å½“å‰çš„ç»„ä»¶
+	          //»¬¶¯ÇĞ»»µÄÊ±ºòÏú»Ùµ±Ç°µÄ×é¼ş
 	            @Override
 	            public void destroyItem(ViewGroup container, int position,
 	                    Object object) {
 	                ((ViewPager) container).removeView(viewContainter.get(position));
 	            }
-	          //æ¯æ¬¡æ»‘åŠ¨çš„æ—¶å€™ç”Ÿæˆçš„ç»„ä»¶
+	          //Ã¿´Î»¬¶¯µÄÊ±ºòÉú³ÉµÄ×é¼ş
 	            @Override
 	            public Object instantiateItem(ViewGroup container, int position) {
 	                ((ViewPager) container).addView(viewContainter.get(position));
@@ -127,9 +127,9 @@ public class HomepageFragment extends Fragment {
 
     private List<Map<String, ?>> fetchData() {
     	// TODO Auto-generated method stub
-		// æ­¥éª¤4-1ï¼šåˆ›å»ºä¸€ä¸ªç©ºé›†åˆå¯¹è±¡
+		// ²½Öè4-1£º´´½¨Ò»¸ö¿Õ¼¯ºÏ¶ÔÏó
 		List<Map<String, ?>> lst = new ArrayList<Map<String, ?>>();
-		// æ­¥éª¤4-2ï¼šåˆ›å»ºä¸€ä¸ªåˆ—è¡¨ä¸­é€‰é¡¹å¯¹è±¡å¹¶å®ä¾‹åŒ–
+		// ²½Öè4-2£º´´½¨Ò»¸öÁĞ±íÖĞÑ¡Ïî¶ÔÏó²¢ÊµÀı»¯
 		
 		//String uri="http://192.168.191.1:8001/TravelMaster/";
 		//String webServerName="ADShowAttractionServlet";
@@ -154,7 +154,7 @@ public class HomepageFragment extends Fragment {
 			
 		}
 		attsum=lst.size();
-		System.out.println("çƒ­é—¨æ€»æ•°ï¼š> "+ attsum);
+		System.out.println("ÈÈÃÅ×ÜÊı£º> "+ attsum);
 		return lst;
 }
 
@@ -162,7 +162,7 @@ public class HomepageFragment extends Fragment {
 	
 
 
-// æ»‘åŠ¨é¡µé¢æ›´æ”¹äº‹ä»¶ç›‘å¬å™¨
+// »¬¶¯Ò³Ãæ¸ü¸ÄÊÂ¼ş¼àÌıÆ÷
 private class Viewocl implements View.OnClickListener{
 	@Override
 	public void onClick(View v) {
@@ -192,10 +192,10 @@ private class ItemOcl implements AdapterView.OnItemClickListener{
 	public void onItemClick(AdapterView<?> adapter, View view, int position,
 			long arg3) {
 		// TODO Auto-generated method stub
-		// æ­¥éª¤6-1ï¼šä½¿ç”¨è¯¥æ–¹æ³•çš„positionå‚æ•°è·å–é€‰ä¸­çš„é€‰é¡¹å¯¹è±¡å¹¶èµ‹å€¼åˆ°Mapé›†åˆä¸­
+		// ²½Öè6-1£ºÊ¹ÓÃ¸Ã·½·¨µÄposition²ÎÊı»ñÈ¡Ñ¡ÖĞµÄÑ¡Ïî¶ÔÏó²¢¸³Öµµ½Map¼¯ºÏÖĞ
 		Map<String, ?> selectedItem = lstData.get(position);
-		// æµ‹è¯•
-		Toast.makeText(getActivity(), "æ‚¨é€‰ä¸­çš„æ˜¯ç¼–å·ä¸º:"+selectedItem.get("mid"), Toast.LENGTH_LONG).show();
+		// ²âÊÔ
+		Toast.makeText(getActivity(), "ÄúÑ¡ÖĞµÄÊÇ±àºÅÎª:"+selectedItem.get("mid"), Toast.LENGTH_LONG).show();
 		int aid=(Integer) selectedItem.get("mid");
 		
 		

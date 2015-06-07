@@ -2,8 +2,12 @@ package org.nku.travelmaster.activity;
 
 import org.nku.travelmaster.utils.ExitApplication;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,6 +18,8 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+@SuppressLint("NewApi")
 public class MainActivity extends FragmentActivity implements OnClickListener {
 	// fragment
 	private HomepageFragment homepageFragment;
@@ -38,9 +44,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 	private FragmentManager fragmentManager;
 
+	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+		StrictMode.setThreadPolicy(policy);
 		super.onCreate(arg0);
 		ExitApplication.getInstance().addActivity(this);
 		

@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.widget.ScrollView;
 
 public class ScrollViewExtend extends ScrollView {
-    // 滑动距离及坐标
+    // 滑动距离及坐�?
     private float xDistance, yDistance, xLast, yLast;
 
     public ScrollViewExtend(Context context, AttributeSet attrs) {

@@ -76,9 +76,9 @@ public class HotattractionFragment extends Fragment {
 	}
 	private List<Map<String, ?>> fetchData() {
 	    	// TODO Auto-generated method stub
-			// æ­¥éª¤4-1ï¼šåˆ›å»ºä¸€ä¸ªç©ºé›†åˆå¯¹è±¡
+			// ²½Öè4-1£º´´½¨Ò»¸ö¿Õ¼¯ºÏ¶ÔÏó
 			List<Map<String, ?>> lst = new ArrayList<Map<String, ?>>();
-			// æ­¥éª¤4-2ï¼šåˆ›å»ºä¸€ä¸ªåˆ—è¡¨ä¸­é€‰é¡¹å¯¹è±¡å¹¶å®ä¾‹åŒ–
+			// ²½Öè4-2£º´´½¨Ò»¸öÁĞ±íÖĞÑ¡Ïî¶ÔÏó²¢ÊµÀı»¯
 			String uri="http://192.168.191.1:8001/TravelMaster/";
 			String webServerName="ADShowAttractionServlet";
 			uri += webServerName;
@@ -122,7 +122,7 @@ public class HotattractionFragment extends Fragment {
 				
 			}
 			attsum=lst.size();
-			System.out.println("æ™¯ç‚¹æ€»æ•°ï¼š> "+ attsum);
+			System.out.println("¾°µã×ÜÊı£º> "+ attsum);
 			return lst;
 			
 	}
@@ -132,7 +132,7 @@ public class HotattractionFragment extends Fragment {
 			// TODO Auto-generated method stub
 			String year=selectYears.getSelectedItem().toString();
 			String season=selectSeasons.getSelectedItem().toString();
-			Toast.makeText(getActivity(), "å¹´ä»½æ˜¯ï¼š"+year+"å­£åº¦æ˜¯ï¼š"+season,Toast.LENGTH_SHORT ).show();
+			Toast.makeText(getActivity(), "Äê·İÊÇ£º"+year+"¼¾¶ÈÊÇ£º"+season,Toast.LENGTH_SHORT ).show();
 			
 		}
 
@@ -143,10 +143,10 @@ public class HotattractionFragment extends Fragment {
 		public void onItemClick(AdapterView<?> adapter, View view, int position,
 				long arg3) {
 			// TODO Auto-generated method stub
-			// æ­¥éª¤6-1ï¼šä½¿ç”¨è¯¥æ–¹æ³•çš„positionå‚æ•°è·å–é€‰ä¸­çš„é€‰é¡¹å¯¹è±¡å¹¶èµ‹å€¼åˆ°Mapé›†åˆä¸­
+			// ²½Öè6-1£ºÊ¹ÓÃ¸Ã·½·¨µÄposition²ÎÊı»ñÈ¡Ñ¡ÖĞµÄÑ¡Ïî¶ÔÏó²¢¸³Öµµ½Map¼¯ºÏÖĞ
 			Map<String, ?> selectedItem = lstData.get(position);
-			// æµ‹è¯•
-			Toast.makeText(getActivity(), "æ‚¨é€‰ä¸­çš„æ˜¯ç¼–å·ä¸º:"+selectedItem.get("mid"), Toast.LENGTH_LONG).show();
+			// ²âÊÔ
+			Toast.makeText(getActivity(), "ÄúÑ¡ÖĞµÄÊÇ±àºÅÎª:"+selectedItem.get("mid"), Toast.LENGTH_LONG).show();
 			int aid=(Integer) selectedItem.get("mid");
 			
 			

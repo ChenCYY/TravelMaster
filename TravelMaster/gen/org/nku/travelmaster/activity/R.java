@@ -8,6 +8,10 @@
 package org.nku.travelmaster.activity;
 
 public final class R {
+    public static final class array {
+        public static final int seasons=0x7f060001;
+        public static final int years=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class color {
@@ -42,81 +46,122 @@ public final class R {
         public static final int yellow=0x7f04000e;
     }
     public static final class drawable {
-        public static final int bg_buttom=0x7f020000;
-        public static final int bg_checkbox_icon_menu_0=0x7f020001;
-        public static final int bg_checkbox_icon_menu_1=0x7f020002;
-        public static final int bg_checkbox_icon_menu_2=0x7f020003;
-        public static final int bg_checkbox_icon_menu_3=0x7f020004;
-        public static final int bg_checkbox_menus=0x7f020005;
-        public static final int bg_list_item=0x7f020006;
-        public static final int bottom1=0x7f020007;
-        public static final int btn_login_bg=0x7f020008;
-        public static final int btn_reg_style=0x7f020009;
-        public static final int default_avatar=0x7f02000a;
-        public static final int forum_selected=0x7f02000b;
-        public static final int forum_unselected=0x7f02000c;
-        public static final int home_btn_bg=0x7f02000d;
-        public static final int homepage_selected=0x7f02000e;
-        public static final int homepage_unselected=0x7f02000f;
-        public static final int hotattraction_selected=0x7f020010;
-        public static final int hotattraction_unselected=0x7f020011;
-        public static final int ic_launcher=0x7f020012;
-        public static final int listitem_main_style=0x7f020013;
-        public static final int login_bg=0x7f020014;
-        public static final int mm_trans=0x7f020015;
-        public static final int tab_bg=0x7f020016;
-        public static final int table_style=0x7f020017;
-        public static final int txt_style=0x7f020018;
-        public static final int user_main_style=0x7f020019;
-        public static final int usercenter_selected=0x7f02001a;
-        public static final int usercenter_unselected=0x7f02001b;
+        public static final int bg=0x7f020000;
+        public static final int bg_buttom=0x7f020001;
+        public static final int bg_checkbox_icon_menu_0=0x7f020002;
+        public static final int bg_checkbox_icon_menu_1=0x7f020003;
+        public static final int bg_checkbox_icon_menu_2=0x7f020004;
+        public static final int bg_checkbox_icon_menu_3=0x7f020005;
+        public static final int bg_checkbox_menus=0x7f020006;
+        public static final int bg_list_item=0x7f020007;
+        public static final int bottom1=0x7f020008;
+        public static final int btn_login_bg=0x7f020009;
+        public static final int btn_reg_style=0x7f02000a;
+        public static final int default_avatar=0x7f02000b;
+        public static final int dot_none=0x7f02000c;
+        public static final int dot_selected=0x7f02000d;
+        public static final int forum_selected=0x7f02000e;
+        public static final int forum_unselected=0x7f02000f;
+        public static final int home_btn_bg=0x7f020010;
+        public static final int homepage_selected=0x7f020011;
+        public static final int homepage_unselected=0x7f020012;
+        public static final int hotattraction_selected=0x7f020013;
+        public static final int hotattraction_unselected=0x7f020014;
+        public static final int ic_launcher=0x7f020015;
+        public static final int image01=0x7f020016;
+        public static final int image02=0x7f020017;
+        public static final int image03=0x7f020018;
+        public static final int image04=0x7f020019;
+        public static final int image05=0x7f02001a;
+        public static final int listitem_main_style=0x7f02001b;
+        public static final int login_bg=0x7f02001c;
+        public static final int mm_trans=0x7f02001d;
+        public static final int p1=0x7f02001e;
+        public static final int p2=0x7f02001f;
+        public static final int p3=0x7f020020;
+        public static final int tab_bg=0x7f020021;
+        public static final int table_style=0x7f020022;
+        public static final int txt_style=0x7f020023;
+        public static final int user_main_style=0x7f020024;
+        public static final int usercenter_selected=0x7f020025;
+        public static final int usercenter_unselected=0x7f020026;
     }
     public static final class id {
-        public static final int btnChangePwd=0x7f07002a;
-        public static final int btnLinearLayout=0x7f070028;
-        public static final int btnLogin=0x7f070006;
-        public static final int btnLogout=0x7f070029;
-        public static final int btnModifyInfo=0x7f07002b;
-        public static final int btnRegister=0x7f070005;
-        public static final int btnRegisterNow=0x7f07001c;
-        public static final int content=0x7f070007;
-        public static final int forum_image=0x7f07000f;
-        public static final int forum_layout=0x7f07000e;
-        public static final int forum_text=0x7f070010;
-        public static final int homepage_image=0x7f070009;
-        public static final int homepage_layout=0x7f070008;
-        public static final int homepage_text=0x7f07000a;
-        public static final int hotattraction_image=0x7f07000c;
-        public static final int hotattraction_layout=0x7f07000b;
-        public static final int hotattraction_text=0x7f07000d;
-        public static final int lblAccount=0x7f070001;
-        public static final int lblEmail=0x7f070024;
-        public static final int lblGender=0x7f070020;
-        public static final int lblMark=0x7f070026;
-        public static final int lblPassword=0x7f070003;
-        public static final int lblRePassword=0x7f07001a;
-        public static final int lblRegisterAccount=0x7f070016;
-        public static final int lblRegisterDate=0x7f070022;
-        public static final int lblRegisterEmail=0x7f070014;
-        public static final int lblRegisterPassword=0x7f070018;
-        public static final int lstButtons=0x7f07002c;
-        public static final int txtAccount=0x7f070002;
-        public static final int txtBtnName=0x7f07001d;
-        public static final int txtEmail=0x7f070025;
-        public static final int txtGender=0x7f070021;
-        public static final int txtMark=0x7f070027;
-        public static final int txtPassword=0x7f070004;
-        public static final int txtRePassword=0x7f07001b;
-        public static final int txtRegisterAccount=0x7f070017;
-        public static final int txtRegisterDate=0x7f070023;
-        public static final int txtRegisterEmail=0x7f070015;
-        public static final int txtRegisterPassword=0x7f070019;
-        public static final int txtTitle=0x7f070000;
-        public static final int txtUserName=0x7f07001f;
-        public static final int userAvatar=0x7f07001e;
-        public static final int usercenter_image=0x7f070012;
-        public static final int usercenter_layout=0x7f070011;
-        public static final int usercenter_text=0x7f070013;
+        public static final int attCity=0x7f080033;
+        public static final int attComments=0x7f080034;
+        public static final int attContext=0x7f080025;
+        public static final int attName=0x7f080022;
+        public static final int attProvince=0x7f080032;
+        public static final int attSum=0x7f080035;
+        public static final int btnChangePwd=0x7f080048;
+        public static final int btnLinearLayout=0x7f080046;
+        public static final int btnLogin=0x7f080006;
+        public static final int btnLogout=0x7f080047;
+        public static final int btnModifyInfo=0x7f080049;
+        public static final int btnRegister=0x7f080005;
+        public static final int btnRegisterNow=0x7f08001c;
+        public static final int btn_sendnewpost=0x7f08002b;
+        public static final int contacts=0x7f08002d;
+        public static final int content=0x7f080007;
+        public static final int first=0x7f080036;
+        public static final int forum_image=0x7f08000f;
+        public static final int forum_layout=0x7f08000e;
+        public static final int forum_text=0x7f080010;
+        public static final int homepage_image=0x7f080009;
+        public static final int homepage_layout=0x7f080008;
+        public static final int homepage_text=0x7f08000a;
+        public static final int hotattraction_image=0x7f08000c;
+        public static final int hotattraction_layout=0x7f08000b;
+        public static final int hotattraction_text=0x7f08000d;
+        public static final int imgPhoto=0x7f080037;
+        public static final int lblAccount=0x7f080001;
+        public static final int lblEmail=0x7f080042;
+        public static final int lblGender=0x7f08003e;
+        public static final int lblMark=0x7f080044;
+        public static final int lblPassword=0x7f080003;
+        public static final int lblRePassword=0x7f08001a;
+        public static final int lblRegisterAccount=0x7f080016;
+        public static final int lblRegisterDate=0x7f080040;
+        public static final int lblRegisterEmail=0x7f080014;
+        public static final int lblRegisterPassword=0x7f080018;
+        public static final int listBlogs=0x7f08002c;
+        public static final int listattractions=0x7f080024;
+        public static final int listattractions2=0x7f080031;
+        public static final int lstButtons=0x7f08004a;
+        public static final int lstReplys=0x7f08001f;
+        public static final int lstfirst=0x7f08001e;
+        public static final int postName=0x7f08001d;
+        public static final int selectSeasons=0x7f08002f;
+        public static final int selectYears=0x7f08002e;
+        public static final int submitSelection=0x7f080030;
+        public static final int txtAccount=0x7f080002;
+        public static final int txtAttraction=0x7f080020;
+        public static final int txtBtnName=0x7f08003b;
+        public static final int txtComment=0x7f080021;
+        public static final int txtContents=0x7f080027;
+        public static final int txtEmail=0x7f080043;
+        public static final int txtGender=0x7f08003f;
+        public static final int txtHeader=0x7f080026;
+        public static final int txtMark=0x7f080045;
+        public static final int txtNickName=0x7f080038;
+        public static final int txtPassword=0x7f080004;
+        public static final int txtPosts=0x7f08003a;
+        public static final int txtPublish=0x7f080039;
+        public static final int txtRePassword=0x7f08001b;
+        public static final int txtRegisterAccount=0x7f080017;
+        public static final int txtRegisterDate=0x7f080041;
+        public static final int txtRegisterEmail=0x7f080015;
+        public static final int txtRegisterPassword=0x7f080019;
+        public static final int txtReplynum=0x7f08002a;
+        public static final int txtTime=0x7f080029;
+        public static final int txtTitle=0x7f080000;
+        public static final int txtUserName=0x7f08003d;
+        public static final int txtUsers=0x7f080028;
+        public static final int userAvatar=0x7f08003c;
+        public static final int usercenter_image=0x7f080012;
+        public static final int usercenter_layout=0x7f080011;
+        public static final int usercenter_text=0x7f080013;
+        public static final int viewpager=0x7f080023;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
@@ -126,14 +171,28 @@ public final class R {
         public static final int activity_mypost=0x7f030004;
         public static final int activity_mytravellist=0x7f030005;
         public static final int activity_register=0x7f030006;
-        public static final int forum_layout=0x7f030007;
-        public static final int homepage_layout=0x7f030008;
-        public static final int hotattraction_layout=0x7f030009;
-        public static final int lst_button_usercenter=0x7f03000a;
-        public static final int usercenter_layout=0x7f03000b;
+        public static final int activity_sendnewpost=0x7f030007;
+        public static final int activity_showpost=0x7f030008;
+        public static final int attraction=0x7f030009;
+        public static final int attraction_layout=0x7f03000a;
+        public static final int blog=0x7f03000b;
+        public static final int forum_layout=0x7f03000c;
+        public static final int homepage_layout=0x7f03000d;
+        public static final int hotattraction_layout=0x7f03000e;
+        public static final int image1=0x7f03000f;
+        public static final int image2=0x7f030010;
+        public static final int image3=0x7f030011;
+        public static final int image4=0x7f030012;
+        public static final int list_detail_attraction=0x7f030013;
+        public static final int listitem_first=0x7f030014;
+        public static final int listitem_post=0x7f030015;
+        public static final int lst_button_usercenter=0x7f030016;
+        public static final int usercenter_layout=0x7f030017;
     }
     public static final class string {
+        public static final int action_settings=0x7f05001f;
         public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050020;
         public static final int login_account=0x7f050006;
         public static final int login_account_hint=0x7f050007;
         public static final int login_login=0x7f05000b;
@@ -164,6 +223,13 @@ public final class R {
         /**  register layout 
          */
         public static final int register_title=0x7f05000c;
+        public static final int selectseasons=0x7f050027;
+        public static final int selectyears=0x7f050026;
+        public static final int title1=0x7f050021;
+        public static final int title2=0x7f050022;
+        public static final int title3=0x7f050023;
+        public static final int title4=0x7f050024;
+        public static final int title5=0x7f050025;
         public static final int usercenter_changePwd=0x7f05001d;
         public static final int usercenter_email=0x7f050019;
         public static final int usercenter_gender=0x7f050017;
@@ -197,11 +263,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int MMTabButton=0x7f060002;
+        public static final int AppTheme=0x7f070001;
+        public static final int MMTabButton=0x7f070002;
     }
 }
